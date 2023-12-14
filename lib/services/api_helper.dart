@@ -26,6 +26,7 @@ class ApiBaseHelper{
     TestApiModel testApiModel = TestApiModel();
     if(res.statusCode == 200){
       testApiModel = TestApiModel.fromJson(data);
+
       testApiModel.errorMessage = "no Error";
       return testApiModel;
     } else {

@@ -3,6 +3,7 @@ class TestApiModel {
   List<Results>? results;
   Info? info;
 
+
   TestApiModel({this.results, this.info});
 
   TestApiModel.fromJson(Map<String, dynamic> json) {
@@ -40,6 +41,7 @@ class Results {
   Id? id;
   Picture? picture;
   String? nat;
+  num? distance;
 
   Results(
       {this.gender,
